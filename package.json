@@ -1,0 +1,23 @@
+{
+  "name": "PastorBot",
+  "version": "2.0.0",
+  "description": "Spread the good news about the Lord and Savior Jesus Christ",
+  "main": "pastor.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jim-rastlerton/PastorDave.git"
+  },
+  "keywords": [
+    "Pastor",
+    "Bot",
+    "Jesus",
+    "Christ",
+    "Lord",
+    "Savior"
+  ],
+  "author": "Jim Rastlerton",
+  "dependencies": {
+    "irc": "^0.3.7",
+    "underscore": "^1.7.0"
+  }
+}
