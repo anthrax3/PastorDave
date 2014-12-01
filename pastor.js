@@ -81,7 +81,7 @@ var preach01 = 'Have you all heard the good news of the Lord and Savior Jesus Ch
     preach16 = '',
     preach17 = '',
     preach18 = '',
-    preach19 = '',
+    preach19 = '';
 
 chans.forEach(function(chan) {
   users[chan] = {
