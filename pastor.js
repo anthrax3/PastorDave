@@ -63,6 +63,26 @@ var users = {}, // users for each channel
     talkyMin = 2,
     threshold = 7; // What must the level be on the channel before speaking
 
+var preach01 = 'Have you all heard the good news of the Lord and Savior Jesus Christ?',
+    preach02 = '',
+    preach03 = '',
+    preach04 = '',
+    preach05 = '',
+    preach06 = '',
+    preach07 = '',
+    preach08 = '',
+    preach09 = '',
+    preach10 = '',
+    preach11 = '',
+    preach12 = '',
+    preach13 = '',
+    preach14 = '',
+    preach15 = '',
+    preach16 = '',
+    preach17 = '',
+    preach18 = '',
+    preach19 = '',
+
 chans.forEach(function(chan) {
   users[chan] = {
     init: false,
@@ -98,7 +118,7 @@ function preach(chan) {
   function intro(chan) {
     client.join(chan);
     setTimeout(function() {
-      client.say(chan, "Have you all heard the good news of the Lord and Savior Jesus Christ?");
+      client.say(chan, preach01);
       setTimeout(function() {
         client.say(chan, "Did you know that Jesus Christ died on the Cross for all your sins?");
         setTimeout(function() {
