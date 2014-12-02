@@ -64,24 +64,24 @@ var users = {}, // users for each channel
     threshold = 7; // What must the level be on the channel before speaking
 
 var preach01 = 'Have you all heard the good news of the Lord and Savior Jesus Christ?',
-    preach02 = '',
-    preach03 = '',
-    preach04 = '',
-    preach05 = '',
-    preach06 = '',
-    preach07 = '',
-    preach08 = '',
-    preach09 = '',
-    preach10 = '',
-    preach11 = '',
-    preach12 = '',
-    preach13 = '',
-    preach14 = '',
-    preach15 = '',
-    preach16 = '',
-    preach17 = '',
-    preach18 = '',
-    preach19 = '',
+    preach02 = 'Did you know that Jesus Christ died on the Cross for all your sins?',
+    preach03 = 'Well, he did.',
+    preach04 = 'Has anyone here read the Bible?',
+    preach05 = 'Let us Pray.',
+    preach06 = 'Our Father, who art in heaven,',
+    preach07 = 'hallowed be thy Name.',
+    preach08 = 'Thy Kingdom come.',
+    preach09 = 'Thy will be done,',
+    preach10 = 'On Earth as it is in heaven.',
+    preach11 = 'Give us this day our daily bread.',
+    preach12 = 'And forgive us our trespasses,',
+    preach13 = 'As we forgive those who trespass against us.',
+    preach14 = 'And lead us not into temptation, but deliver us from evil.',
+    preach15 = 'For thine is the kingdom, and the power, and the glory,',
+    preach16 = 'for ever and ever.',
+    preach17 = 'Amen.',
+    preach18 = 'Thank you all very much. God bless each and every single one of you.',
+    preach19 = 'Goodbye';
 
 chans.forEach(function(chan) {
   users[chan] = {
@@ -120,11 +120,11 @@ function preach(chan) {
     setTimeout(function() {
       client.say(chan, preach01);
       setTimeout(function() {
-        client.say(chan, "Did you know that Jesus Christ died on the Cross for all your sins?");
+        client.say(chan, preach02);
         setTimeout(function() {
-          client.say(chan, "Well, he did.");
+          client.say(chan, preach03);
           setTimeout(function() {
-            client.say(chan, "Has anyone here read the Bible?");
+            client.say(chan, preach04);
             closingPrayer1(chan);
           }, 20000);
         }, 8000);
@@ -134,17 +134,17 @@ function preach(chan) {
   
   function closingPrayer1(chan) {
     setTimeout(function() {
-      client.say(chan, "Let us Pray.");
+      client.say(chan, preach05);
       setTimeout(function() {
-        client.say(chan, "Our Father, who art in heaven,");
+        client.say(chan, preach06);
         setTimeout(function() {
-          client.say(chan, "hallowed be thy Name.");
+          client.say(chan, preach07);
           setTimeout(function() {
-            client.say(chan, "Thy Kingdom come.");
+            client.say(chan, preach08);
             setTimeout(function() {
-              client.say(chan, "Thy will be done,");
+              client.say(chan, preach09);
               setTimeout(function() {
-                client.say(chan, "On Earth as it is in heaven.");
+                client.say(chan, preach10);
                 closingPrayer2(chan);
               }, 3000);
             }, 2500);
@@ -156,19 +156,19 @@ function preach(chan) {
   
   function closingPrayer2(chan) {
     setTimeout(function() {
-      client.say(chan, "Give us this day our daily bread.");
+      client.say(chan, preach11);
       setTimeout(function() {
-        client.say(chan, "And forgive us our trespasses,");
+        client.say(chan, preach12);
         setTimeout(function() {
-          client.say(chan, "As we forgive those who trespass against us.");
+          client.say(chan, preach13);
           setTimeout(function() {
-            client.say(chan, "And lead us not into temptation, but deliver us from evil.");
+            client.say(chan, preach14);
             setTimeout(function() {
-              client.say(chan, "For thine is the kingdom, and the power, and the glory,");
+              client.say(chan, preach15);
               setTimeout(function() {
-                client.say(chan, "for ever and ever.");
+                client.say(chan, preach16);
                 setTimeout(function() {
-                  client.say(chan, "Amen.");
+                  client.say(chan, preach17);
                   exit(chan);
                 }, 1500);
               }, 1000);
@@ -181,9 +181,9 @@ function preach(chan) {
   
   function exit(chan) {
     setTimeout(function() {
-      client.say(chan, "Thank you all very much. God bless each and every single one of you.");
+      client.say(chan, preach18);
       setTimeout(function() {
-        client.say(chan, "Goodbye");
+        client.say(chan, preach19);
         client.part(chan);
       }, 2000);
     }, 5000);
