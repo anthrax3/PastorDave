@@ -64,7 +64,6 @@ var users = {}, // users for each channel
     threshold = 7; // What must the level be on the channel before speaking
 
 var preach01 = 'Have you all heard the good news of the Lord and Savior Jesus Christ?',
-<<<<<<< HEAD
     preach02 = 'Did you know that Jesus Christ died on the Cross for all your sins?',
     preach03 = 'Well, he did.',
     preach04 = 'Has anyone here read the Bible?',
