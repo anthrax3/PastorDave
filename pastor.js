@@ -64,6 +64,7 @@ var users = {}, // users for each channel
     threshold = 7; // What must the level be on the channel before speaking
 
 var preach01 = 'Have you all heard the good news of the Lord and Savior Jesus Christ?',
+<<<<<<< HEAD
     preach02 = 'Did you know that Jesus Christ died on the Cross for all your sins?',
     preach03 = 'Well, he did.',
     preach04 = 'Has anyone here read the Bible?',
@@ -82,6 +83,26 @@ var preach01 = 'Have you all heard the good news of the Lord and Savior Jesus Ch
     preach17 = 'Amen.',
     preach18 = 'Thank you all very much. God bless each and every single one of you.',
     preach19 = 'Goodbye';
+=======
+    preach02 = '',
+    preach03 = '',
+    preach04 = '',
+    preach05 = '',
+    preach06 = '',
+    preach07 = '',
+    preach08 = '',
+    preach09 = '',
+    preach10 = '',
+    preach11 = '',
+    preach12 = '',
+    preach13 = '',
+    preach14 = '',
+    preach15 = '',
+    preach16 = '',
+    preach17 = '',
+    preach18 = '',
+    preach19 = '';
+>>>>>>> d739d1bbb435c1949d88264d5248b7e90b054d0f
 
 chans.forEach(function(chan) {
   users[chan] = {
